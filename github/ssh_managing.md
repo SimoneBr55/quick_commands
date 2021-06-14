@@ -19,26 +19,34 @@ ssh -T git@github.com
 # Make sure your local git knows you...
 
 git config --global -l
+  
 #if not
+  
 git config --global user.name <your-name>
 git config --global user.email <your-email>
 
 # Clone a test repository
 
 #if private
+  
 git clone git@github.com:username/test.git
 
 #if public
+  
 git clone git://github.com/username/test
 
 # Link local and remote repo
+  
 git remote set-url origin git@github.com:username/test.git
 
 # Now you can do your stuff...
 
 touch file
+  
 git add file
+  
 #or git add -A 
+  
 git commit -am "this is a test message"
+  
 git push
-
