@@ -1,4 +1,4 @@
-```
+```bash
 openssl genrsa -out site.key 2048
 openssl req -new -key site.key -out site.net.csr
 cp old_certs/site.net.ext .
